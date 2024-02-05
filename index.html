@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD PROJECT</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--başlık-->
+    <h1>CRUD Uygulaması</h1>
+    <br />
+
+    
+
+    <!--form objesi-->
+    <form>
+      <div>
+        <div class="title">Kullanıcı Adı</div>
+        <input type="text" name="username" id="username" required />
+      </div>
+      <div>
+        <div class="title">E-Posta Adresi</div>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <button onclick="addUser()" type="submit">Ekle</button>
+    </form>
+ 
+    <!--kullanıcı listesi-->
+    <div id="userList"></div>
+    <br>
+    <form>
+      
+      <button type="submit" onclick="temizle()">Temizle</button>
+    </form>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
